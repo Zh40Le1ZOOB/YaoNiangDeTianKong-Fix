@@ -1,6 +1,8 @@
 p {
 	text-indent: 2em;
 }
+blockquote > p,
+h1 > p,
 li > p {
 	text-indent: initial;
 }
@@ -15,7 +17,6 @@ li > p {
 .single-title {
 	display: inline-block;
 	position: relative;
-	text-indent: initial;
 	writing-mode: vertical-lr;
 }
 .first-title {
