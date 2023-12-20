@@ -4,25 +4,26 @@ p {
 blockquote > p,
 h1 > p,
 li > p {
-	text-indent: initial;
+	text-indent: 0;
 }
 .part-title {
 	display: flex;
 	height: 80vh;
-	align-items: center;
-	justify-content: space-evenly;
-}
-.first-title,
-.last-title,
-.single-title {
-	display: inline-block;
-	position: relative;
+	justify-content: start;
 	writing-mode: vertical-lr;
 }
+.first-title,
+.last-title {
+	display: inline-block;
+	margin: 0;
+}
 .first-title {
-	top: 10%;
+	font-size: xxx-large;
+	text-indent: 1em;
 }
 
 .last-title {
-	bottom: 10%;
+	position: relative;
+	top: 0.5em;
+	left: 2em;
 }
