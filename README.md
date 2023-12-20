@@ -59,3 +59,14 @@
 - [AutoCorrect](https://github.com/huacnlee/autocorrect) 及其全体贡献者，拯救了本项目凌乱的文本。
 
 - 本项目的全体贡献者，感谢你们为本项目提供支持！
+
+## 贡献名单
+
+> 按字符排序，排名不分先后。
+
+- GitHub
+  - [command\_block(Zh40Le1ZOOB)](https://github.com/Zh40Le1ZOOB)
+
+- QQ
+  - Alkaid
+  - 酪梨
