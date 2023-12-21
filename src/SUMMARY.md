@@ -1,6 +1,7 @@
 # 目录
 
 [简介](README.md)
+[公告](announcement.md)
 
 ---
 

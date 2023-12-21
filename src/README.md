@@ -2,11 +2,16 @@
 
 作者：乱世银娘
 
-> （仅限 Web）点击右上角按钮可切换全屏以获得最佳阅读体验（再次点击可退出），发现错误可直接点击旁边的编辑按钮修改并创建 Pull request。
+> Web 版提示：点击右上角按钮可切换全屏以获得最佳阅读体验。发现错误可直接点击全屏按钮左侧的编辑按钮修改并创建 Pull request，或者访问项目仓库提出 Issue。
 
 ## 项目地址
 
 [GitHub](https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix)
+
+> 可前往项目仓库获取 EPUB 版。
+
+> EPUB 版提示：如果阅读器不支持跳转可以复制以下链接并访问。
+> `https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix`
 
 ## 项目宗旨
 
@@ -27,3 +32,14 @@
 - [AutoCorrect](https://github.com/huacnlee/autocorrect) 及其全体贡献者，拯救了本项目凌乱的文本。
 
 - 本项目的全体贡献者，感谢你们为本项目提供支持！
+
+## 贡献名单
+
+> 按字符 Unicode 编码排序，排名不分先后。
+
+- GitHub
+  - [command\_block(Zh40Le1ZOOB)](https://github.com/Zh40Le1ZOOB)
+
+- QQ
+  - Alkaid
+  - 酪梨
