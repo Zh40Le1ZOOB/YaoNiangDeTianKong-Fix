@@ -7,7 +7,7 @@
 
 ## 项目地址
 
-[GitHub](https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix)
+[GitHub 仓库](https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix)
 
 > 可前往项目仓库获取 EPUB 版。
 

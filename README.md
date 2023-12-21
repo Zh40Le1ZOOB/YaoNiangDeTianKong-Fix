@@ -2,10 +2,6 @@
 
 作者：乱世银娘
 
-## 项目地址
-
-[GitHub](https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix)
-
 ## 项目宗旨
 
 原小说已被小说平台封杀，且由于小说平台的内容审查导致小说被和谐删减。本项目基于作者提供的未被和谐删减的[小说原稿](https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Origin)，进行校对与修复工作。
