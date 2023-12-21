@@ -3,7 +3,8 @@ p {
 }
 blockquote > p,
 h1 > p,
-li > p {
+li > p,
+p:has(img) {
   text-indent: 0;
 }
 .part-title {
