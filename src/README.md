@@ -3,6 +3,7 @@
 作者：乱世银娘
 
 > Web 版提示：点击右上角按钮可切换全屏以获得最佳阅读体验。发现错误可直接点击全屏按钮左侧的编辑按钮修改并创建 Pull request，或者访问项目仓库提出 Issue。
+> 贡献前请先阅读[贡献说明](https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix?tab=readme-ov-file#%E5%81%9A%E5%87%BA%E8%B4%A1%E7%8C%AE)。
 
 ## 项目地址
 
