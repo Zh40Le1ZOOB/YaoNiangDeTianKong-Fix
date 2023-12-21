@@ -9,7 +9,7 @@
 
 [GitHub 仓库](https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix)
 
-> 可前往项目仓库获取 EPUB 版。
+> 可前往项目仓库获取其他版本。
 
 > EPUB 版提示：如果阅读器不支持跳转可以复制以下链接并访问。
 > `https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix`
