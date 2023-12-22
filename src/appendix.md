@@ -6,6 +6,12 @@
 
 ![](images/cover-origin.png)
 
+## 初设封面
+
+![](images/cover-initial.jpg)
+
+![](images/cover-origin-initial.jpg)
+
 ## 黑白版
 
 ![](images/020.jpg)
