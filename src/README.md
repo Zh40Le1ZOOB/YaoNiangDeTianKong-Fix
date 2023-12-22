@@ -2,21 +2,43 @@
 
 作者：乱世银娘
 
-> Web 版提示：点击右上角按钮可切换全屏以获得最佳阅读体验。发现错误可直接点击全屏按钮左侧的编辑按钮修改并创建 Pull request，或者访问项目仓库提出 Issue。
-> 贡献前请先阅读[贡献说明](https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix?tab=readme-ov-file#%E5%81%9A%E5%87%BA%E8%B4%A1%E7%8C%AE)。
-
-## 项目地址
-
-[GitHub 仓库](https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix)
-
-> 可前往项目仓库获取其他版本。
-
-> EPUB 版提示：如果阅读器不支持跳转可以复制以下链接并访问。
-> `https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix`
-
 ## 项目宗旨
 
 原小说已被小说平台封杀，且由于小说平台的内容审查导致小说被和谐删减。本项目基于作者提供的未被和谐删减的[小说原稿](https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Origin)，进行校对与修复工作。
+
+## 项目仓库
+
+[GitHub 仓库](https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix)
+
+### 仓库说明
+
+- 可前往项目仓库获取其他版本。
+
+- 如果您使用 EPUB 版但阅读器不支持链接跳转，您可以复制此链接并使用浏览器访问：`https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix`
+
+- 做出贡献前请先阅读仓库自述文件的[做出贡献](https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix?tab=readme-ov-file#%E5%81%9A%E5%87%BA%E8%B4%A1%E7%8C%AE)部分。
+
+## Web 版使用指南
+
+- 顶栏
+
+  - <i class="fa fa-bars"></i>目录
+
+  - <i class="fa fa-paint-brush"></i>主题
+
+  - <i class="fa fa-search"></i>搜索（暂不支持中文搜索）
+
+  - <i class="fa fa-print"></i>打印
+
+  - <i class="fa fa-github"></i>GitHub 仓库
+
+  - <i class="fa fa-edit"></i>编辑（可直接创建 Pull request）
+
+  - <i class="fa fa-arrows-alt"></i>全屏
+
+- 评论区
+
+  - 使用 GitHub 账号登录后可发表评论。
 
 ## 许可协议
 
@@ -39,8 +61,11 @@
 > 按字符 Unicode 编码排序，排名不分先后。
 
 - GitHub
+
   - [command\_block(Zh40Le1ZOOB)](https://github.com/Zh40Le1ZOOB)
 
 - QQ
+
   - Alkaid
+
   - 酪梨
