@@ -1,7 +1,8 @@
 [book]
 title = "药娘的天空"
 authors = ["乱世银娘"]
-language = "zh-CN"
+description = "《药娘的天空》精修版"
+language = "zh-cn"
 
 [output.html]
 curly-quotes = true
