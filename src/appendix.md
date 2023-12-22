@@ -12,7 +12,7 @@
 
 ![](images/cover-origin-initial.jpg)
 
-## 黑白版
+## 黑白插画
 
 ![](images/020.jpg)
 
@@ -32,7 +32,7 @@
 
 ![](images/unknown-08.jpg)
 
-## 彩色版
+## 彩色插画
 
 ![](images/020-color.jpg)
 
