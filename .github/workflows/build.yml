@@ -47,7 +47,9 @@ jobs:
           EOF
 
       - name: Build book
-        run: mdbook build
+        run: |
+          mdbook build
+          ls book/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
@@ -159,7 +161,9 @@ jobs:
           EOF
 
       - name: Build PDF
-        run: mdbook build
+        run: |
+          mdbook build
+          ls book/
 
       - name: Rename PDF file
         run: mv book/pdfoutline/*.pdf book/pdfoutline/药娘的天空-$GITHUB_SHA.pdf
