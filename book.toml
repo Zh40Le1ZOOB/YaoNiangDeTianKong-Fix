@@ -18,10 +18,3 @@ enable = true
 
 [output.html.search]
 limit-results = 1000
-
-[output.epub]
-additional-css = ["theme/style.css"]
-use-default-css = false
-cover-image = "images/cover.jpg"
-no-section-label = true
-curly-quotes = true

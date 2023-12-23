@@ -2,23 +2,32 @@ name: Build
 
 on:
   push:
-  workflow_dispatch:
+    paths:
+      - ".github/workflows/**"
+      - "src/**"
+      - "theme/**"
+      - "book.toml"
 
 permissions:
   pages: write
   id-token: write
 
 jobs:
-  build:
+  pages:
+    name: Build and deploy to GitHub Pages
+
+    runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
-    runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
       - name: Install mdBook
         uses: baptiste0928/cargo-install@v2
@@ -26,34 +35,136 @@ jobs:
           crate: mdbook
           git: https://github.com/Zh40Le1ZOOB/mdBook
 
+      - name: Add version info
+        run: |
+          echo "BUILD_TIME=$(TZ=Asia/Shanghai date -Iseconds)" >> "$GITHUB_ENV"
+          cat >> src/README.md << EOF
+          ## 版本信息
+          ```
+          提交 SHA：$GITHUB_SHA
+          构建时间：$BUILD_TIME
+          ```
+          EOF
+
+      - name: Build book
+        run: mdbook build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: book/html/
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v3
+
+  epub:
+    name: Build and upload EPUB
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Install mdbook-epub
         uses: baptiste0928/cargo-install@v2
         with:
           crate: mdbook-epub
           git: https://github.com/Michael-F-Bryan/mdbook-epub
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
+      - name: Add EPUB options
+        run: |
+          cat >> book.toml << EOF
+          [output.epub]
+          additional-css = ["theme/style.css"]
+          use-default-css = false
+          cover-image = "images/cover.jpg"
+          no-section-label = true
+          curly-quotes = true
+          EOF
 
       - name: Add version info
-        run: echo -e "\n\n## 版本信息\n\n\`\`\`\n提交 SHA：$GITHUB_SHA\n构建时间：$(TZ=Asia/Shanghai date -Iseconds)\n\`\`\`" >> src/README.md
-
-      - name: Build
         run: |
-          mdbook build
-          mv ./book/epub/*.epub ./book/epub/药娘的天空-$GITHUB_SHA.epub
+          cat >> src/README.md << EOF
+          ## 版本信息
+          ```
+          提交 SHA：$GITHUB_SHA
+          构建时间：$BUILD_TIME
+          ```
+          EOF
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: ./book/html/
+      - name: Build EPUB
+        run: mdbook-epub -s true
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v3
+      - name: Rename EPUB file
+        run: mv book/epub/*.epub book/epub/药娘的天空-$GITHUB_SHA.epub
 
       - name: Upload EPUB artifact
         uses: actions/upload-artifact@v4
         with:
           name: EPUB
-          path: ./book/epub/*.epub
+          path: book/epub/*.epub
+
+  pdf:
+    name: Build and upload PDF
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v1
+
+      - name: Install mdBook
+        uses: baptiste0928/cargo-install@v2
+        with:
+          crate: mdbook
+          git: https://github.com/Zh40Le1ZOOB/mdBook
+
+      - name: Install mdbook-pdf
+        uses: baptiste0928/cargo-install@v2
+        with:
+          crate: mdbook-pdf
+          git: https://github.com/HollowMan6/mdbook-pdf
+
+      - name: Install mdbook-pdf-outline
+        uses: BSFishy/pip-action@v1
+        with:
+          packages: mdbook-pdf-outline
+
+      - name: Add PDF options
+        run: |
+          cat >> book.toml << EOF
+          [output.pdf]
+          scale = 1
+          paper-width = 10
+          paper-height = 12
+          margin-top = 1
+          margin-bottom = 1
+          margin-left = 1
+          [output.pdf-outline]
+          EOF
+
+      - name: Add version info
+        run: |
+          cat >> src/README.md << EOF
+          ## 版本信息
+          ```
+          提交 SHA：$GITHUB_SHA
+          构建时间：$BUILD_TIME
+          ```
+          EOF
+
+      - name: Build PDF
+        run: mdbook build
+
+      - name: Rename PDF file
+        run: mv book/pdfoutline/*.pdf book/pdfoutline/药娘的天空-$GITHUB_SHA.pdf
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: PDF
+          path: book/pdfoutline/*.pdf
