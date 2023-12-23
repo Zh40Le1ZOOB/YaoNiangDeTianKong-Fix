@@ -52,7 +52,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: book/html/
+          path: ./book/html/
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v3
@@ -103,7 +103,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: EPUB
-          path: book/epub/*.epub
+          path: ./book/epub/*.epub
+          compression-level: 9
 
   pdf:
     name: Build and upload PDF
@@ -167,4 +168,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: PDF
-          path: book/pdfoutline/*.pdf
+          path: ./book/pdfoutline/*.pdf
+          compression-level: 9
