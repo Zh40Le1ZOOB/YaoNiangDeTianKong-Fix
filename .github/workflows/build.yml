@@ -37,7 +37,7 @@ jobs:
 
       - name: Add version info
         run: |
-          echo "BUILD_TIME=$(TZ=Asia/Shanghai date -Iseconds)" >> "$GITHUB_ENV"
+          echo -e "BUILD_TIME=$(TZ=Asia/Shanghai date -Iseconds)" >> "$GITHUB_ENV"
           cat >> src/README.md << EOF
           ## 版本信息
           \`\`\`
@@ -131,9 +131,7 @@ jobs:
           git: https://github.com/HollowMan6/mdbook-pdf
 
       - name: Install mdbook-pdf-outline
-        uses: BSFishy/pip-action@v1
-        with:
-          packages: mdbook-pdf-outline
+        run: pip install mdbook-pdf-outline
 
       - name: Add PDF options
         run: |
