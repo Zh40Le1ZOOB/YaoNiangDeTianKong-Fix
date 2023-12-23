@@ -61,7 +61,8 @@
 > 按字符 Unicode 编码排序，排名不分先后。
 
 - GitHub
-  - [command\_block(Zh40Le1ZOOB)](https://github.com/Zh40Le1ZOOB)
+
+  - [command_block(Zh40Le1ZOOB)](https://github.com/Zh40Le1ZOOB)
 
 - QQ
   - Alkaid
@@ -85,12 +86,12 @@
 
 ## 《药娘的天空》续作预告
 
-*陌生的天花板。
+_陌生的天花板。
 隐隐约约的疼在变得清晰。
 春风轻轻敲打着窗户，像是要为她送来重生后的芬芳。
-很疼。*
+很疼。_
 
-*——一种令人喜悦的疼。*
+_——一种令人喜悦的疼。_
 
 为银娘打赏以支持写作！＼(^o^)／
 

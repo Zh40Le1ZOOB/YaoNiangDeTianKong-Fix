@@ -6,7 +6,7 @@ language = "zh-cn"
 
 [output.html]
 curly-quotes = true
-additional-css = ["src/style.css"]
+additional-css = ["theme/style.css", "theme/navigation.css"]
 no-section-label = true
 header-link = false
 git-repository-url = "https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix"
@@ -20,7 +20,7 @@ enable = true
 limit-results = 1000
 
 [output.epub]
-additional-css = ["src/style.css"]
+additional-css = ["theme/style.css"]
 use-default-css = false
 cover-image = "images/cover.jpg"
 no-section-label = true

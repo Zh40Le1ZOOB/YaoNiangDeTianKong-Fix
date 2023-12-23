@@ -62,7 +62,7 @@
 
 - GitHub
 
-  - [command\_block(Zh40Le1ZOOB)](https://github.com/Zh40Le1ZOOB)
+  - [command_block(Zh40Le1ZOOB)](https://github.com/Zh40Le1ZOOB)
 
 - QQ
 
