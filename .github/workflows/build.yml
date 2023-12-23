@@ -23,6 +23,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      - name: Write variable to environment
+        run: echo -e "BUILD_TIME=$(TZ=Asia/Shanghai date -Iseconds)" >> "$GITHUB_ENV"
+
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -37,7 +40,6 @@ jobs:
 
       - name: Add version info
         run: |
-          echo -e "BUILD_TIME=$(TZ=Asia/Shanghai date -Iseconds)" >> "$GITHUB_ENV"
           cat >> src/README.md << EOF
           ## 版本信息
           \`\`\`
@@ -55,6 +57,7 @@ jobs:
           path: book/
 
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v3
 
   epub:
