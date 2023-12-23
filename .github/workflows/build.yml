@@ -47,14 +47,12 @@ jobs:
           EOF
 
       - name: Build book
-        run: |
-          mdbook build
-          ls book/
+        run:  mdbook build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./book/html/
+          path: book/
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v3
@@ -105,7 +103,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: EPUB
-          path: ./book/epub/*.epub
+          path: book/epub/*.epub
           compression-level: 9
 
   pdf:
@@ -161,16 +159,14 @@ jobs:
           EOF
 
       - name: Build PDF
-        run: |
-          mdbook build
-          ls book/
+        run: mdbook build
 
       - name: Rename PDF file
-        run: mv book/pdfoutline/*.pdf book/pdfoutline/药娘的天空-$GITHUB_SHA.pdf
+        run: mv book/pdf-outline/*.pdf book/pdf-outline/药娘的天空-$GITHUB_SHA.pdf
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
           name: PDF
-          path: ./book/pdfoutline/*.pdf
+          path: book/pdf-outline/*.pdf
           compression-level: 9
