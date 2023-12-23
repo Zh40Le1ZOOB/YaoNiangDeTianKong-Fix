@@ -40,10 +40,10 @@ jobs:
           echo "BUILD_TIME=$(TZ=Asia/Shanghai date -Iseconds)" >> "$GITHUB_ENV"
           cat >> src/README.md << EOF
           ## 版本信息
-          ```
+          \`\`\`
           提交 SHA：$GITHUB_SHA
           构建时间：$BUILD_TIME
-          ```
+          \`\`\`
           EOF
 
       - name: Build book
@@ -87,10 +87,10 @@ jobs:
         run: |
           cat >> src/README.md << EOF
           ## 版本信息
-          ```
+          \`\`\`
           提交 SHA：$GITHUB_SHA
           构建时间：$BUILD_TIME
-          ```
+          \`\`\`
           EOF
 
       - name: Build EPUB
@@ -152,10 +152,10 @@ jobs:
         run: |
           cat >> src/README.md << EOF
           ## 版本信息
-          ```
+          \`\`\`
           提交 SHA：$GITHUB_SHA
           构建时间：$BUILD_TIME
-          ```
+          \`\`\`
           EOF
 
       - name: Build PDF
