@@ -118,6 +118,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install typst
+        uses: baptiste0928/cargo-install@v2
+        with:
+          crate: typst-cli
+          git: https://github.com/typst/typst
 
       - name: Install mdBook
         uses: baptiste0928/cargo-install@v2
