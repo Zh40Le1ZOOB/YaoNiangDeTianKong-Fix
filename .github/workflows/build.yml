@@ -118,35 +118,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Chrome
-        uses: browser-actions/setup-chrome@v1
-
       - name: Install mdBook
         uses: baptiste0928/cargo-install@v2
         with:
           crate: mdbook
           git: https://github.com/Zh40Le1ZOOB/mdBook
 
-      - name: Install mdbook-pdf
+      - name: Install mdbook-compress
         uses: baptiste0928/cargo-install@v2
         with:
-          crate: mdbook-pdf
-          git: https://github.com/HollowMan6/mdbook-pdf
-
-      - name: Install mdbook-pdf-outline
-        run: pip install mdbook-pdf-outline
+          crate: mdbook-compress
+          git: https://github.com/RosiePuddles/mdbook-compress
 
       - name: Add PDF options
         run: |
           cat >> book.toml << EOF
-          [output.pdf]
-          scale = 1
-          paper-width = 10
-          paper-height = 12
-          margin-top = 1
-          margin-bottom = 1
-          margin-left = 1
-          [output.pdf-outline]
+          [output.compress]
+          highlight = "none"
           EOF
 
       - name: Add version info
@@ -163,11 +151,11 @@ jobs:
         run: mdbook build
 
       - name: Rename PDF file
-        run: mv book/pdf-outline/*.pdf book/pdf-outline/药娘的天空-$GITHUB_SHA.pdf
+        run: mv book/compress/*.pdf book/compress/药娘的天空-$GITHUB_SHA.pdf
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
           name: PDF
-          path: book/pdf-outline/*.pdf
+          path: book/compress/*.pdf
           compression-level: 9
