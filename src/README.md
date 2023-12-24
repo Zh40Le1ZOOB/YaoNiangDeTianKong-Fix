@@ -58,13 +58,15 @@
 
 ## 贡献名单
 
-> 按字符 Unicode 编码排序，排名不分先后。
+> 按拼音排序，排名不分先后。
 
 - GitHub
 
   - [command_block(Zh40Le1ZOOB)](https://github.com/Zh40Le1ZOOB)
 
 - QQ
+
+  - 阿呆ADBL
 
   - Alkaid
 
