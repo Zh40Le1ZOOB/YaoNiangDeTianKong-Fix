@@ -128,7 +128,6 @@ jobs:
         uses: baptiste0928/cargo-install@v2
         with:
           crate: mdbook-compress
-          git: https://github.com/RosiePuddles/mdbook-compress
 
       - name: Add PDF options
         run: |
