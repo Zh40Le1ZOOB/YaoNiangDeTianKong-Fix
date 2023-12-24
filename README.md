@@ -10,17 +10,13 @@
 
 ## 开始阅读
 
-- [x] [Web](https://Zh40Le1ZOOB.github.io/YaoNiangDeTianKong-Fix)
+- [Web](https://Zh40Le1ZOOB.github.io/YaoNiangDeTianKong-Fix)
 
 > mdBook 不支持中文搜索，如果你有使其支持中文搜索的办法，欢迎提出讨论。:)
 
-- [x] [EPUB](https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix/actions)
+- [EPUB](https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix/actions)
 
 > 大部分 EPUB 阅读器并不能渲染所有样式，因此不推荐使用 EPUB，使用 Web 可保持更新并获得最佳阅读体验。:)
-
-- [ ] PDF
-
-> 由于 mdbook-pdf 构建速度过慢（奇慢无比）且存在奇怪的问题，因此暂时不支持 PDF。如果你有任何构建 PDF 的好方法，欢迎提出讨论。:)
 
 ## 做出贡献
 
