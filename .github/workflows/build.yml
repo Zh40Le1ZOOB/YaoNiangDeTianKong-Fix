@@ -118,10 +118,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v4.0.1
-        with:
-          node-version: latest
 
       - name: Install mdBook
         uses: baptiste0928/cargo-install@v2
@@ -129,17 +125,17 @@ jobs:
           crate: mdbook
           git: https://github.com/Zh40Le1ZOOB/mdBook
 
-      - name: Install mdbook-compress
+      - name: Install mdbook-typst
         uses: baptiste0928/cargo-install@v2
         with:
-          crate: mdbook-compress
-          git: https://github.com/RosiePuddles/mdbook-compress
+          crate: mdbook-typst
+          git: https://github.com/LegNeato/mdbook-typst
 
       - name: Add PDF options
         run: |
           cat >> book.toml << EOF
-          [output.compress]
-          highlight = "none"
+          [output.typst.output]
+          format = "pdf"
           EOF
 
       - name: Add version info
@@ -156,11 +152,11 @@ jobs:
         run: mdbook build
 
       - name: Rename PDF file
-        run: mv book/compress/*.pdf book/compress/药娘的天空-$GITHUB_SHA.pdf
+        run: mv book/typst/*.pdf book/typst/药娘的天空-$GITHUB_SHA.pdf
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
           name: PDF
-          path: book/compress/*.pdf
+          path: book/typst/*.pdf
           compression-level: 9
