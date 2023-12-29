@@ -28,10 +28,45 @@
 
 - [AutoCorrect](https://github.com/huacnlee/autocorrect) 及其全体贡献者，拯救了本项目凌乱的文本。
 
-- 本项目的全体贡献者，感谢你们为本项目提供支持！
+<li>
+<details>
+<summary>本项目的全体贡献者</summary>
+> 按字母顺序及拼音排序，排名不分先后。
 
-# [公告](ANNOUNCEMENT.md)
+- 阿呆ADBL <mhy1864558@qq.com>
+
+- Alkaid <919788199@qq.com>
+
+- command_block <mtf@ik.me>
+
+- 酪梨 <unknown>
+</details>
+</li>
+
+<h1>
+<details>
+<summary>公告</summary>
+## 《药娘的天空》相关群聊
+
+- 银娘的读者群：`577975444`
+
+- 药空专用群：`464585054`
+
+## 《药娘的天空》续作预告
+
+_陌生的天花板。
+隐隐约约的疼在变得清晰。
+春风轻轻敲打着窗户，像是要为她送来重生后的芬芳。
+很疼。_
+
+_——一种令人喜悦的疼。_
+
+为银娘打赏以支持写作！＼(^o^)／
+
+![](src/images/alipay.jpg)
+
+![](src/images/wechatpay.jpg)
+</details>
+</h1>
 
 # [贡献指南](CONTRIBUTING.md)
-
-# [贡献者列表](CONTRIBUTORS.md)
