@@ -1,16 +1,20 @@
-# 贡献指南
+# 做出贡献
 
-## 注意事项
+以下情况均可视为对本项目做出了贡献：
 
-- 中文部分使用全角标点，英文部分使用半角标点。
+- 为本项目提供了建议，一个字也算。
 
-- 严格区分英文大小写，尤其是专有名词。优先使用专有名词的显示名称（Display Name），如果没有则使用唯一名称（Unique Name）。
+- 启发了本项目的开发。
 
-- 严格注意专有名词中空格的使用，如果原词中没有空格切勿添加空格，反之如果原词中有空格切勿删去空格。使用 AutoCorrect 检查纠正时如果专有名词被错误地纠正，请参考 AutoCorrect 自述文件 [Configuration](https://github.com/huacnlee/autocorrect#configuration) 部分在 AutoCorrect 配置文件`.autocorrectrc`中添加忽略规则。
+- 查找出文本中的错误并反馈。
 
-## 简单修改
+- 直接参与开发。
 
-直接在对应章节的网页版点击右上角的修改按钮修改并创建 Pull request。
+- 救人一命。
+
+## 举手之劳
+
+发现错误可直接通过网页版对应章节右上角的编辑按钮向开发者建议编辑。
 
 ## 高级开发
 
@@ -46,6 +50,14 @@ autocorrect --fix
 
 8. 创建 Pull request。
 
+## 高级开发注意事项
+
+- 使用全角标点。
+
+- 严格区分英文大小写，尤其是专有名词。优先使用专有名词的显 示名称（Display Name），如果没有则使用唯一名称（Unique Name）。
+
+- 严格注意专有名词中空格的使用，如果原词中没有空格切勿添加 空格，反之如果原词中有空格切勿删去空格。使用 AutoCorrect 检查纠正时如果专有名词被错误地纠正，请参考 AutoCorrect 自述文件 [Configuration](https://github.com/huacnlee/autocorrect#configuration) 部分在 AutoCorrect 配置文件`.autocorrectrc` 中添加忽略规则。
+
 ## 参与核心开发
 
 您可能需要掌握以下技能：
@@ -58,9 +70,13 @@ autocorrect --fix
 
 TODO：
 
-- 改进底部导航键样式及防烧屏措施。
+- 把 AutoCorrect 作为 mdBook 预处理器使用以省去手动运行的步骤。
+
+- 基于 GitHub Actions 的 Linter。
 
 - 本地阅读版本下载按钮。
+
+- 改进底部导航键样式及防烧屏措施。
 
 - PDF 版本支持。
 
