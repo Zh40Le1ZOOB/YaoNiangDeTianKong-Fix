@@ -28,9 +28,9 @@
 
 - [AutoCorrect](https://github.com/huacnlee/autocorrect) 及其全体贡献者，拯救了本项目凌乱的文本。
 
-<li>
 <details>
-<summary>本项目的全体贡献者</summary>
+<li><summary>本项目的全体贡献者</summary></li>
+
 > 按字母顺序及拼音排序，排名不分先后。
 
 - 阿呆ADBL <mhy1864558@qq.com>
@@ -42,12 +42,12 @@
 - 酪梨 <unknown>
 
 - 律音 <1441346781@qq.com>
-</details>
-</li>
 
-<h1>
+</details>
+
 <details>
-<summary>公告</summary>
+<h1><summary>公告</summary></h1>
+
 ## 《药娘的天空》相关群聊
 
 - 银娘的读者群：`577975444`
@@ -68,7 +68,7 @@ _——一种令人喜悦的疼。_
 ![](src/images/alipay.jpg)
 
 ![](src/images/wechatpay.jpg)
+
 </details>
-</h1>
 
 # [贡献指南](CONTRIBUTING.md)
