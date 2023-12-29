@@ -1,4 +1,4 @@
-# 参与开发
+# 贡献指南
 
 ## 注意事项
 
@@ -50,7 +50,7 @@ autocorrect --fix
 
 您可能需要掌握以下技能：
 
-- HTML & CSS & JavaScript 用于开发本项目的前端页面。
+- HTML & CSS & JavaScript & Handlebars 用于开发本项目的前端页面。
 
 - Rust 用于为 mdBook 开发本项目需要的新功能。
 

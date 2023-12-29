@@ -30,6 +30,6 @@
 
 # [公告](ANNOUNCEMENT.md)
 
-# [参与开发](DEVELOPMENT.md)
+# [贡献指南](CONTRIBUTING.md)
 
-# [贡献列表](CONTRIBUTIONS.md)
+# [贡献者列表](CONTRIBUTORS.md)
