@@ -19,5 +19,3 @@
 - <i class="fa fa-edit"></i>编辑此页面，可直接创建 Pull request。
 
 - <i class="fa fa-arrows-alt"></i>切换全屏。
-
-每页底部的评论区使用 GitHub 账号登录后可以发表评论。
