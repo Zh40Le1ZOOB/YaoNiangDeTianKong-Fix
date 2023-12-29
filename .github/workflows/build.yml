@@ -78,7 +78,7 @@ jobs:
       - name: Remove web edition chapters
         run: |
           rm src/GUIDE.md
-          sed -i '/\[指南\]\(GUIDE.md\)/d' src/SUMMARY.md
+          sed -i '/\[指南\](GUIDE.md)/d' src/SUMMARY.md
 
       - name: Add EPUB options
         run: |
