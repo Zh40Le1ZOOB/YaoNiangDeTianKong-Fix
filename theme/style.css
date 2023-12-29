@@ -22,7 +22,6 @@ p:has(img) {
   font-size: xxx-large;
   text-indent: 1em;
 }
-
 .last-title {
   position: relative;
   top: 0.5em;
