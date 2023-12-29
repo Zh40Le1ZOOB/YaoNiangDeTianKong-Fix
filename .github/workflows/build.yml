@@ -8,6 +8,9 @@ on:
       - "theme/**"
       - "book.toml"
 
+permissions:
+  id-token: write
+
 jobs:
   html:
     name: Build and deploy to GitHub Pages
