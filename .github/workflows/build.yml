@@ -8,13 +8,9 @@ on:
       - "theme/**"
       - "book.toml"
 
-permissions:
-  id-token: write
-  pages: write
-
 jobs:
   html:
-    name: Build and deploy to GitHub Pages
+    name: Build and upload HTML
 
     runs-on: ubuntu-latest
 
@@ -51,14 +47,12 @@ jobs:
       - name: Build book
         run: mdbook build
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v2
+      - name: Upload HTML artifact
+        uses: actions/upload-artifact@v4
         with:
+          name: HTML
           path: book/
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v3
+          compression-level: 9
 
   epub:
     name: Build and upload EPUB
