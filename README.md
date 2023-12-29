@@ -45,8 +45,9 @@
 
 </details>
 
+## 公告
+
 <details>
-<summary>公告</summary>
 
 ## 《药娘的天空》相关群聊
 
@@ -71,4 +72,4 @@ _——一种令人喜悦的疼。_
 
 </details>
 
-# [贡献指南](CONTRIBUTING.md)
+# [做出贡献](CONTRIBUTING.md)
