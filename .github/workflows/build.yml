@@ -14,19 +14,12 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
       - name: Write variable to environment
         run: echo -e "BUILD_TIME=$(TZ=Asia/Shanghai date -Iseconds)" >> "$GITHUB_ENV"
 
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
 
       - name: Install mdBook
         uses: baptiste0928/cargo-install@v2
