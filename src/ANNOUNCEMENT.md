@@ -17,6 +17,6 @@ _——一种令人喜悦的疼。_
 
 为银娘打赏以支持写作！＼(^o^)／
 
-![](src/images/alipay.jpg)
+![](images/alipay.jpg)
 
-![](src/images/wechatpay.jpg)
+![](images/wechatpay.jpg)
