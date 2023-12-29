@@ -28,8 +28,10 @@
 
 - [AutoCorrect](https://github.com/huacnlee/autocorrect) 及其全体贡献者，拯救了本项目凌乱的文本。
 
+- 本项目的全体贡献者，感谢你们的帮助！>w<
+
 <details>
-<li><summary>本项目的全体贡献者</summary></li>
+<summary>贡献者列表</summary>
 
 > 按字母顺序及拼音排序，排名不分先后。
 
@@ -46,7 +48,7 @@
 </details>
 
 <details>
-<h1><summary>公告</summary></h1>
+<summary>公告</summary>
 
 ## 《药娘的天空》相关群聊
 
