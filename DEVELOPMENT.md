@@ -6,7 +6,7 @@
 
 - 严格区分英文大小写，尤其是专有名词。优先使用专有名词的显示名称（Display Name），如果没有则使用唯一名称（Unique Name）。
 
-- 严格注意专有名词中空格的使用，如果原词中没有空格切勿添加空格，反之如果原词中有空格切勿删去空格。使用 AutoCorrect 检查纠正时如果专有名词被错误地纠正，请参考 AutoCorrect 自述文件[Configuration](https://github.com/huacnlee/autocorrect#configuration) 部分在 AutoCorrect 配置文件`.autocorrectrc`中添加忽略规则。
+- 严格注意专有名词中空格的使用，如果原词中没有空格切勿添加空格，反之如果原词中有空格切勿删去空格。使用 AutoCorrect 检查纠正时如果专有名词被错误地纠正，请参考 AutoCorrect 自述文件 [Configuration](https://github.com/huacnlee/autocorrect#configuration) 部分在 AutoCorrect 配置文件`.autocorrectrc`中添加忽略规则。
 
 ## 简单修改
 
@@ -22,7 +22,7 @@
 cargo install --git https://github.com/Zh40Le1ZOOB/mdBook mdbook
 ```
 
-3. 安装[AutoCorrect](https://github.com/huacnlee/autocorrect)。
+3. 安装 [AutoCorrect](https://github.com/huacnlee/autocorrect)。
 
 4. 复刻本项目仓库并克隆至本地。
 

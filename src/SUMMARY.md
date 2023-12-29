@@ -1,7 +1,7 @@
 # 目录
 
-[指南](GUIDE.md)
 [简介](README.md)
+[指南](GUIDE.md)
 [公告](ANNOUNCEMENT.md)
 
 ---
