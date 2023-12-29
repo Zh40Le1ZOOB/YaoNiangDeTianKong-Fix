@@ -1,7 +1,8 @@
 # 目录
 
+[指南](GUIDE.md)
 [简介](README.md)
-[公告](announcement.md)
+[公告](ANNOUNCEMENT.md)
 
 ---
 
@@ -762,4 +763,4 @@
 
 ---
 
-[附录 · 插画](appendix.md)
+[附录 · 插画](APPENDIX.md)

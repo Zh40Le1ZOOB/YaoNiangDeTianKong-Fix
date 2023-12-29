@@ -75,6 +75,11 @@ jobs:
           crate: mdbook-epub
           git: https://github.com/Michael-F-Bryan/mdbook-epub
 
+      - name: Remove web edition chapters
+        run: |
+          rm src/GUIDE.md
+          sed -i '/\[指南\]\(GUIDE.md\)/d' src/SUMMARY.md
+
       - name: Add EPUB options
         run: |
           cat >> book.toml << EOF
