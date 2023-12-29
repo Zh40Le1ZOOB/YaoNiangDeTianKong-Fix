@@ -68,3 +68,6 @@
   width: 60px;
   font-size: 2em;
 }
+.nav-fill {
+  position: static;
+}
