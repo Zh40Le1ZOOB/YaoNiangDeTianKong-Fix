@@ -70,13 +70,17 @@ autocorrect --fix
 
 TODO：
 
-- 把 AutoCorrect 作为 mdBook 预处理器使用以省去手动运行的步骤。
+- 美化导航键样式。
 
-- 基于 GitHub Actions 的 Linter。
+- 支持左右滑动换页。
+
+- 记住每章节的阅读位置并在下次访问或换页时恢复。
 
 - 本地阅读版本下载按钮。
 
-- 改进底部导航键样式及防烧屏措施。
+- 把 AutoCorrect 作为 mdBook 预处理器使用以省去手动运行的步骤。
+
+- 基于 GitHub Actions 的 Linter。
 
 - PDF 版本支持。
 
