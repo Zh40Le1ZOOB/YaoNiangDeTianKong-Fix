@@ -10,7 +10,7 @@
 
 - [Web](https://Zh40Le1ZOOB.github.io/YaoNiangDeTianKong-Fix)
 
-- [EPUB](https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix/actions)
+- [EPUB](https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix/actions?query=branch%3Afix)
 
 ## 许可协议
 
