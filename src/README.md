@@ -1,3 +1,5 @@
+# !!已迁移至 <https://github.com/proskynova>!!
+
 # 《药娘的天空》精修版
 
 作者：乱世银娘
