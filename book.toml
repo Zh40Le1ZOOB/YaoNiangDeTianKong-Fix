@@ -10,7 +10,7 @@ additional-css = ["theme/style.css", "theme/navigation.css"]
 no-section-label = true
 header-link = false
 git-repository-url = "https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix"
-edit-url-template = "https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix/edit/main/{path}"
+edit-url-template = "https://github.com/Zh40Le1ZOOB/YaoNiangDeTianKong-Fix/edit/main/src/{path}"
 site-url = "/YaoNiangDeTianKong-Fix/"
 
 [output.html.fold]
